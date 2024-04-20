@@ -6,7 +6,6 @@ import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Test;
 import User.UserMethods;
-import static org.hamcrest.Matchers.equalTo;
 
 @DisplayName("Создание пользователя: POST /api/auth/register")
 public class UserCreateTest {

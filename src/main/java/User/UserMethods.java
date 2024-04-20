@@ -12,13 +12,31 @@ public class UserMethods {
         return spec()
                 .body(user)
                 .when()
-                .post(USER);
+                .post(USER_REGISTER);
     }
-    @Step("Удаление пользователя")
-    public static Response deleteUser(String accessToken) {
+    @Step("Авторизация пользователя")
+    public static Response loginUser(User user) {
+        return spec()
+                .body(user)
+                .when()
+                .post(USER_AUTH);
+    }
+    /*
+    @Step("Авторизация пользователя")
+    public static Response loginUser(User user, String accessToken) {
         return spec()
                 .header("Authorization",accessToken)
+                .body(user)
                 .when()
-                .delete(USER_DELETE);
+                .post(USER_AUTH);
+    }
+
+     */
+    @Step("Удаление пользователя")
+    public static void deleteUser(String accessToken) {
+                 spec()
+                .header("Authorization",accessToken)
+                .when()
+                .delete(USER);
     }
 }
