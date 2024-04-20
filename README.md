@@ -9,6 +9,7 @@ Java 11, JUnit4, Maven, RestAssured, Allure
 ### Как запускать:
 
 `mvn clean test`
+
 `mvn allure:serve`
 
 ___________________________________________________________________________________
