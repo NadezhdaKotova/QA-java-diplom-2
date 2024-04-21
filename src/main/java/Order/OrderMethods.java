@@ -27,4 +27,17 @@ public class OrderMethods {
                 .when()
                 .post(ORDER);
     }
+    @Step("Получение заказа с токеном авторизации")
+    public static Response getOrders(String accessToken) {
+        return spec()
+                .header("Authorization",accessToken)
+                .when()
+                .get(ORDER);
+    }
+    @Step("Получение заказа без токена авторизации в заголовке")
+    public static Response getOrders() {
+        return spec()
+                .when()
+                .get(ORDER);
+    }
 }
