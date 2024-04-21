@@ -12,6 +12,7 @@ public class UrlApi {
     public static final String USER_AUTH = "/api/auth/login";
 
 
+
     //указываем, что нам надо иметь в спецификации URL и Content-Type Json.
     public static RequestSpecification spec() {
         return given()
