@@ -6,6 +6,8 @@ import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Test;
 import User.UserMethods;
+
+@DisplayName("Создание пользователя: PATCH /api/auth/user")
 public class UserUpdateTest {
     String accessToken;
     @Test

@@ -11,6 +11,7 @@ import org.junit.After;
 import org.junit.Test;
 import java.util.ArrayList;
 
+@DisplayName("Получение заказа: GET /api/orders")
 public class OrderGetTest {
     private String accessToken;
     @Test
