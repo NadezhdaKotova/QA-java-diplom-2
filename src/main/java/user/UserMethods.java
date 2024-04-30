@@ -1,11 +1,13 @@
-package User;
-import static Constants.UrlApi.*;
+package user;
+import static constants.UrlApi.*;
+
+import constants.UserRandomizer;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
 public class UserMethods {
     public static User createNewUser() {
-        return new User("aaa222@aaa2222.ru", "pswd", "aaa");
+        return new User(UserRandomizer.getNewRandomUser().getEmail(), UserRandomizer.getNewRandomUser().getPassword(), UserRandomizer.getNewRandomUser().getName());
     }
     @Step("Создание нового пользователя")
     public static Response createUser(User user) {

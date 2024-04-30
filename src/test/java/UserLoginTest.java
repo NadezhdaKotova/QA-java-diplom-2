@@ -1,11 +1,11 @@
-import User.User;
+import user.User;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.junit.After;
 import org.junit.Test;
-import User.UserMethods;
+import user.UserMethods;
 @DisplayName("Логин пользователя: POST /api/auth/login")
 public class UserLoginTest {
     String accessToken;

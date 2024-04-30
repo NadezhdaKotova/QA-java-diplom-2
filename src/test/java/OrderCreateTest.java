@@ -1,15 +1,15 @@
-import Order.Ingredients;
-import Order.Order;
-import User.User;
+import order.Ingredients;
+import order.Order;
+import user.User;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.After;
 import org.junit.Test;
 import org.hamcrest.Matchers;
-import Order.OrderMethods;
+import order.OrderMethods;
 import java.util.ArrayList;
-import User.UserMethods;
+import user.UserMethods;
 @DisplayName("Создание заказа: POST /api/orders")
 public class OrderCreateTest {
     private String accessToken;

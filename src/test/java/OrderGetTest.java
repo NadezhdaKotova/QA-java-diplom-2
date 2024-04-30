@@ -1,8 +1,8 @@
-import Order.Ingredients;
-import Order.Order;
-import Order.OrderMethods;
-import User.User;
-import User.UserMethods;
+import order.Ingredients;
+import order.Order;
+import order.OrderMethods;
+import user.User;
+import user.UserMethods;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;

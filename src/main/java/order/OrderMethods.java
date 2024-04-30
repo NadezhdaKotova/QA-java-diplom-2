@@ -1,7 +1,7 @@
-package Order;
+package order;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
-import static Constants.UrlApi.*;
+import static constants.UrlApi.*;
 
 public class OrderMethods {
     @Step("Получение данных об ингредиентах.")
